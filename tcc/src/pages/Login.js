@@ -12,24 +12,26 @@ const Login = () => (
             <div id="login">
                 <strong className="titulo">Login</strong>
                 <form>
-                    <div class="input-block">
+                    <div className="input-block">
                         <label htmlFor="usuario">Usuário</label>
                         <input name="usuario" id="usuario" required />
                     </div>
 
-                    <div class="input-block">
+                    <div className="input-block">
                         <label htmlFor="senha">Senha</label>
                         <input type="password" id="senha" required />
                     </div>
 
                     <div id="btn-container">
-                <a src=""><button id="entrar" type="submit">Entrar</button></a>
+               <button id="entrar" type="submit"> <a href="/Home"> Entrar</a></button>
                     </div>
 
                 </form>
             </div>
         </div>
         <script src="btn.js"></script>
+
+        
     </div>
 
 
