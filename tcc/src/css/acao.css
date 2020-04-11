@@ -1,0 +1,24 @@
+/*  GRID    */
+
+.grid {
+    background-color: white;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 200px;
+    
+}
+
+section {
+    margin-top: 10%;
+    display: grid;
+}
+
+.opcao {
+    margin: 10px 10px;
+    padding: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+.opcao img {
+    
+}

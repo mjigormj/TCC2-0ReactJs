@@ -2,7 +2,6 @@ import React from 'react';
 import "../css/login.css";
 import "../css/global.css";
 
-
 const Login = () => (
     //function App() {
     //return (
@@ -23,7 +22,7 @@ const Login = () => (
                     </div>
 
                     <div id="btn-container">
-               <button id="entrar" type="submit"> <a href="/Home"> Entrar</a></button>
+                        <button id="entrar" type="submit"> <a href="/Home"> Entrar</a></button>
                     </div>
 
                 </form>
@@ -31,7 +30,7 @@ const Login = () => (
         </div>
         <script src="btn.js"></script>
 
-        
+
     </div>
 
 

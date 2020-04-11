@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {isAuthenticated} from '../auth';
 
-import { BrowserRouter, Route, Router, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Login from '../pages/Login'
 import Home from '../pages/Home'
+import BD from '../pages/BD'
+import Historico from '../pages/Historico'
+import Moradores from '../pages/Moradores'
 import NotFound from './NotFound'
-import { history } from '../history'
+
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={props => (
@@ -23,6 +26,9 @@ const Routes = () => (
         <Switch>
             <Route component={Login} exact path="/" />
             <PrivateRoute component={Home} exact path="/Home" />
+            <PrivateRoute component={BD} exact path="/BD" />
+            <PrivateRoute component={Historico} exact path="/Historico" />
+            <PrivateRoute component={Moradores} exact path="/Moradores" />
             <Route component={NotFound} />
         </Switch>
 
