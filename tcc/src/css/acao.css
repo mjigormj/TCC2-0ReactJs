@@ -1,24 +1,26 @@
 /*  GRID    */
 
-.grid {
-    background-color: white;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 200px;
+.container {
+    margin-left: calc(50% - 315px);
+    margin-top: calc(50% - 500px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-gap: 15px;
     
 }
 
-section {
-    margin-top: 10%;
-    display: grid;
-}
 
 .opcao {
-    margin: 10px 10px;
-    padding: 30px;
-    padding: 10px;
-    background-color: white;
+    align-items: center;
+    background-color: rgb(71, 135, 255);
 }
 
-.opcao img {
-    
+.opcao:hover {
+    background-color: #FFF;
+    margin: 30px;
+    padding: 20px;
 }
