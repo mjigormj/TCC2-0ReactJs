@@ -21,7 +21,7 @@ const Login = () => (
                         <input type="password" id="senha" required />
                     </div>
 
-                    <div id="btn-container">
+                    <div id="btn-container" >
                         <button id="entrar" type="submit"> <a href="/Home"> Entrar</a></button>
                     </div>
 

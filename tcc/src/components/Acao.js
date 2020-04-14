@@ -1,5 +1,8 @@
 import React from 'react';
+import Modal from '../components/Modal'
 import "../css/acao.css";
+
+
 import cadIcon from "../img/cad.png";
 import editIcon from "../img/edit.png";
 import histIcon from "../img/hist.png";
@@ -9,7 +12,7 @@ import msgIcon from "../img/msg.png";
 const Acao = () => (
     <div>
         <section className="container">
-
+            
             <div className="opcao">
                 <img src={cadIcon} alt="cadIcon" />
                 <p>Cadastrar</p>
@@ -41,6 +44,7 @@ const Acao = () => (
             </div>
         </section>
     </div>
+
 );
 
 export default Acao;
