@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from '../components/Modal'
+import Modal, {RadBtn} from './Modal'
 import "../css/acao.css";
 
 
@@ -13,36 +13,34 @@ const Acao = () => (
     <div>
         <section className="container">
             
-            <div className="opcao">
-                <img src={cadIcon} alt="cadIcon" />
-                <p>Cadastrar</p>
-            </div>
+            <Modal/>
 
-            <div className="opcao">
+            <div className="opcao" id="">
                 <img src={editIcon} alt="editIcon" />
                 <p>Editar</p>
             </div>
 
-            <div className="opcao">
+            <div className="opcao" id="">
                 <img src={histIcon} alt="histIcon" />
                 <p>Historico</p>
             </div>
 
-            <div className="opcao">
+            <div className="opcao" id="">
                 <img src={entrIcon} alt="entrIcon" />
                 <p>Entrega</p>
             </div>
 
-            <div className="opcao">
+            <div className="opcao" id="">
                 <img src={msgIcon} alt="msgIcon" />
                 <p>Caixa de Mensagens</p>
             </div>
 
-            <div className="opcao">
+            <div className="opcao" id="">
                 <img src={cadIcon} alt="cadIcon" />
                 <p></p>
             </div>
         </section>
+        <script src="./Modal"/>
     </div>
 
 );
