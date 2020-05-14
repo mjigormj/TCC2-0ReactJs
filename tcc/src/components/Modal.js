@@ -10,6 +10,7 @@ import Progress from './barraProgreco';
 import "../css/acao.css";
 
 import cadIcon from "../img/cad.png";
+import cancel from "../img/cancel.png";
 
 export default function TransitionsModal() {
 
@@ -50,12 +51,12 @@ export default function TransitionsModal() {
 
     return (
         <div>
-            <button type="button" onClick={handleOpen} className="opcao">
-                <div className="" id="cad">
-                    <img src={cadIcon} alt="cadIcon" />
-                    <p>Cadastrar</p>
-                </div>
-            </button>
+
+            <div className="opcao" id="cad">
+                <img onClick={handleOpen} src={cadIcon} alt="cadIcon" />
+                <p>Cadastrar</p>
+            </div>
+
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
@@ -70,13 +71,11 @@ export default function TransitionsModal() {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-
                         <div className="cad_labels">
-                            <Progress/>
                             <form>
-                                <button type="submit">Salvar</button>
-                                <button type="btn" onClick={handleClose}>Cancelar</button>
+                                <button type="btn" onClick={handleClose}><img src={cancel} /></button>
                             </form>
+                            <Progress />
                         </div>
                     </div>
                 </Fade>

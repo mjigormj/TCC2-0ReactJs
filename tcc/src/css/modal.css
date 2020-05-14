@@ -14,11 +14,11 @@
 }
 
 .cad_labels form {
-    margin-top: 30px;
+    margin-top:0;
 }
 
 .cad_labels form .input-block + .input-block{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .cad_labels form .input-group {
@@ -65,13 +65,12 @@
 }
 
 .cad_labels form button[type=btn]{
-    width: 40%;
     border: 0;
-    margin-top: 30px;
-    margin-left: 10%;
-    background: red;
+    margin-top: -10px;
+    margin-left: 90%;
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 2px;
-    padding:  15px 20px;
+    padding:  10px 10px;
     font-size: 16px;
     font-weight: bold;
     color: #FFF;

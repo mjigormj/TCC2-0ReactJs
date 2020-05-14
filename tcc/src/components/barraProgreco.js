@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import "../css/modal.css";
 
-
+import Previw from '../components/Previw'
 import Modal from './Modal';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,21 +19,21 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
   },
   instructions: {
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(1),
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
   },
 }));
 
 function getSteps() {
-  return ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+  return ['Dados', 'Foto', 'Confirmação'];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
       return (
-        <>
-          <strong>Novo Morador</strong>
+        <div>
+          <strong>Dados Pessoais</strong>
           <form>
             <div className="input-block">
               <label htmlFor="nome_pessoa">Nome</label>
@@ -57,22 +57,34 @@ function getStepContent(step) {
 
           </form>
 
-          <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
-        </>);
+          
+        </div>);
 
 
     case 1:
       return (
-        <>
+        <div>
+          <Previw />
           
-          <div className="input-block">
-            <label htmlFor="foto">Foto</label>
-            <input type="file" name="foto" id="foto" onChange="preview()" required />
-          </div>
-        </>);
+        </div>);
 
     case 2:
-      return 'This is the bit I really care about!';
+      return (
+        <div>
+          Confirmar cadastro
+          <form>
+            <div className="input-block">
+              <label htmlFor="usuario">Usuário</label>
+              <input name="usuario" id="usuario" required />
+            </div>
+
+            <div className="input-block">
+              <label htmlFor="senha">Senha</label>
+              <input type="password" id="senha" required />
+            </div>
+          </form>
+        </div>);
+
     default:
       return 'Unknown step';
   }
@@ -85,7 +97,7 @@ export default function HorizontalLinearStepper() {
   const steps = getSteps();
 
   const isStepOptional = (step) => {
-    return step === 1;
+    return step === false;
   };
 
   const isStepSkipped = (step) => {
@@ -179,7 +191,7 @@ export default function HorizontalLinearStepper() {
                   onClick={handleNext}
                   className={classes.button}
                 >
-                  {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                  {activeStep === steps.length - 1 ? 'Enviar' : 'Next'}
                 </Button>
               </div>
             </div>
