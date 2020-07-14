@@ -2,6 +2,8 @@ import React from 'react';
 import "../css/login.css";
 import "../css/global.css";
 import axios from 'axios';
+import { Redirect } from "react-router-dom";
+
 
 
 
@@ -22,12 +24,15 @@ export default class Login extends React.Component{
         const conta = {
             usuario: this.state.usuario,
             senha: this.state.senha
+
         };
+
+        const {history} = this.props
 
         axios.post(`http://127.0.0.1:5000/login`, {usuario: conta.usuario, senha: conta.senha})
             .then(res=>{
-                console.log(res);
-                console.log(res.output)
+                console.log(res.data.status)
+                if(res.data.status === true) { history.push('/home' ); return 200 }
             })
     };
     
@@ -49,7 +54,7 @@ export default class Login extends React.Component{
                         </div>
 
                         <div id="btn-container" >
-                            <button id="entrar" type="submit"> <a href="/Home"> Entrar</a></button>
+                            <button id="entrar" type="submit">Entrar</button>
                         </div>
 
                     </form>
