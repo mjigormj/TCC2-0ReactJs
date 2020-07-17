@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/login.css";
 import "../css/global.css";
 import axios from 'axios';
+import { Alert } from '@material-ui/lab';
 import { Redirect } from "react-router-dom";
 
 
@@ -33,7 +34,9 @@ export default class Login extends React.Component{
             .then(res=>{
                 console.log(res.data.status)
                 if(res.data.status === true) { history.push('/home' ); return 200 }
+                else {return <Alert>{res.data.message}</Alert>}
             })
+        
     };
     
     render(){

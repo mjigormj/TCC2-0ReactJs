@@ -2,20 +2,20 @@ import React from 'react'
 import "../css/CardHistorico.css"
 
 
-export default function CardHistorico(props){
+export default function CardSaida(props){
     return(
         <div className="card">
             <div className="registro">
+                <h1 className="text-registro">Tipo:</h1>
+                <h1 className="text-registro">{props.data.tipo}</h1>
+            </div>
+            <div className="registro">
                 <h1 className="text-registro">ID:</h1>
-                <h1 className="text-registro">{props.data.id}</h1>
+                <h1 className="text-registro">{props.data.idsaida}</h1>
             </div>
             <div className="registro">
-                <h1 className="text-registro">Apartamento:</h1>
-                <h1 className="text-registro">{props.data.apartamento}</h1>
-            </div>
-            <div className="registro">
-                <h1 className="text-registro">Prédio:</h1>
-                <h1 className="text-registro">{props.data.predio}</h1>
+                <h1 className="text-registro">ID da entrada:</h1>
+                <h1 className="text-registro">{props.data.entrada}</h1>
             </div>
             <div className="registro">
                 <h1 className="text-registro">Pessoa:</h1>
