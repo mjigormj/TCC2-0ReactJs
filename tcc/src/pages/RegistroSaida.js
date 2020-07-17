@@ -2,7 +2,6 @@ import React, { Component, useEffect, useState } from 'react'
 import "../css/historico.css";
 import NavBar from '../components/NavBar'
 import axios from 'axios'
-import CardHistorico from '../components/CardEntrada'
 import {NavLink} from 'react-router-dom'
 import CardSaida from '../components/CardSaida';
 
@@ -27,7 +26,7 @@ export default function RegistroSaida (props) {
     return (
         <div>
             <NavBar/>
-            <h1 className="title_tab">Saída</h1>
+            <h1 className="title_tab">Saídas</h1>
             <div className="tabncontent">
                 <div className="tab_options">
                     <NavLink to="/historico/saida/registros"className="tab_text">Histórico</NavLink>

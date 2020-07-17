@@ -1,0 +1,79 @@
+#NovoRegistro {
+    background-color: rgba(54, 55, 136, .6);
+    height: 380px;
+    width: 50%;
+    position: relative;
+    top: calc(50% - 150px);
+    left: calc(35% - 160px);
+    
+    margin-top:75px;
+
+    padding: 30px 20px;
+    border-radius: 2px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#NovoRegistroSaida {
+    background-color: rgba(54, 55, 136, .6);
+    height: 20%;
+    width: 50%;
+    position: relative;
+    top: calc(50% - 150px);
+    left: calc(35% - 160px);
+    
+    margin-top:75px;
+
+    padding: 30px 20px;
+    border-radius: 2px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.modalNovoRegistro strong {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.modalNovoRegistro form {
+    margin-top: 30px;
+}
+
+.modalNovoRegistro form .input-block + .input-block {
+    margin-top: 20px;
+}
+
+.modalNovoRegistro form .input-block label {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+.modalNovoRegistro form .input-block input {
+    background-color:rgba(54, 55, 136, 0);
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.modalNovoRegistro form button[type=submit] {
+    width: 100%;
+    border: 0;
+    margin-top: 30px;
+    background: rgb(8, 4, 247);
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modalNovoRegistro form button[type=submit]:hover {
+    background-color: cornflowerblue;
+}

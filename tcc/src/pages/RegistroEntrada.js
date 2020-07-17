@@ -24,7 +24,7 @@ export default function RegistroEntrada(){
     return(
         <div>
         <NavBar/>
-        <h1 className="title_tab">Entrada</h1>
+        <h1 className="title_tab">Entradas</h1>
         <div className="tabncontent">
         <div className="tab_options">
             <NavLink to="/historico/entrada/registros"className="tab_text">Histórico</NavLink>

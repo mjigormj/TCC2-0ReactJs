@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import "../css/NavBar.css";
 import logo from "../img/logon.png";
 
@@ -9,7 +10,7 @@ const NavBar = () => (
             <img src={logo} alt="logo"/>
             <nav>
                 <ul className="nav_links">
-                    <li><a className="waves-effect" href="/Home">Home</a></li> <li><a className="waves-effect" href="/Moradores">Moradores</a></li> <li><a className="waves-effect" href="/Historico">Histórico</a></li> <li><a className="waves-effect" href="/BD">Banco de Dados</a></li>
+                    <li><NavLink className="waves-effect" to="/Home">Home</NavLink></li> <li><NavLink className="waves-effect" to="/Moradores">Moradores</NavLink></li> <li><NavLink className="waves-effect" to="/Historico">Histórico</NavLink></li> <li><NavLink className="waves-effect" to="/BD">Banco de Dados</NavLink></li>
                 </ul>
             </nav>
         </header>
