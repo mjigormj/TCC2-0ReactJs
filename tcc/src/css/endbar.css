@@ -1,0 +1,7 @@
+.endbar{
+    background-color: rgb(23, 26, 41);
+    min-height: 38px;
+    margin-top:40px;
+    position: relative;
+    top: 100px;
+}

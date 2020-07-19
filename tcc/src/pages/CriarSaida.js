@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import '../css/NovoRegistro.css'
 import axios from 'axios'
 import {NavLink} from 'react-router-dom'
+import Endbar from '../components/Endbar'
 
 export default class CriarEntrada extends React.Component{
     
@@ -40,7 +41,7 @@ export default class CriarEntrada extends React.Component{
             <div className="tab_options">
                     <NavLink to="/historico/saida/registros"className="tab_text">Histórico</NavLink>
                     <NavLink to="/historico/saida/criar"className="tab_text">Criar registro</NavLink>
-                </div>
+            </div>
             <div className="modalNovoRegistro">
                 <div id="NovoRegistroSaida">
                     <strong className="titulo">Novo registro</strong>
@@ -50,7 +51,7 @@ export default class CriarEntrada extends React.Component{
                             <input name="cpf" id="cpf" required onChange={this.handleChange}/>
                         </div>
                         <div id="btn-container" >
-                            <button id="entrar" type="submit">Entrar</button>
+                            <button id="entrar" type="submit">Enviar</button>
                         </div>
 
                     </form>
@@ -58,6 +59,7 @@ export default class CriarEntrada extends React.Component{
                 </div>
             </div>
             <script src="btn.js"></script>
+            <Endbar/>
         </div>
         )
     }

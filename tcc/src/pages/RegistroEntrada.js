@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import axios from 'axios'
 import CardHistorico from '../components/CardEntrada'
 import {NavLink} from 'react-router-dom'
+import Endbar from '../components/Endbar'
 
 export default function RegistroEntrada(){
     const[entradas, setEntradas] = useState([])
@@ -38,6 +39,7 @@ export default function RegistroEntrada(){
         )}
          </div>
          </div>
+         <Endbar/>
     </div>
     )
 }

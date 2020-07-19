@@ -1,0 +1,40 @@
+.new_r_button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    font-weight: 550;
+    font-size:25px;
+    text-align: center;
+    width: 15%;
+    border-radius: 12px;
+    padding: 4px;
+    margin-left:250px;
+    opacity: .8;
+    cursor: pointer; 
+    background-color: rgb(23, 26, 41);
+}
+
+.new_r_button:hover{
+    opacity: 1;
+}
+
+.morador_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+.morador {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(23, 26, 41);
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 10px;
+    margin-top: 50px;
+    min-width: 380px;
+    min-height: 200px;
+    width: 70%;
+    margin-left: 15%;
+}

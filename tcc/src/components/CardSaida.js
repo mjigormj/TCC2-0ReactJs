@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/CardHistorico.css"
+import "../css/Card.css"
 
 
 export default function CardSaida(props){

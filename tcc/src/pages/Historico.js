@@ -5,6 +5,7 @@ import axios from 'axios'
 import CardEntrada from '../components/CardEntrada'
 import CardSaida from '../components/CardSaida'
 import {NavLink} from 'react-router-dom'
+import Endbar from '../components/Endbar';
 
 
 
@@ -49,6 +50,7 @@ export default function Historico (props) {
                         )}
                 </div>
             </div>
+            <Endbar/>
         </div>
     );
 }

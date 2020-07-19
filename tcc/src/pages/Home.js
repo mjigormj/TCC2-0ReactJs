@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "../css/Home.css";
 import NavBar from  '../components/NavBar'
 import Acao from '../components/Acao';
+import Endbar from '../components/Endbar';
 
 class Home extends Component {
     render() {
@@ -9,6 +10,7 @@ class Home extends Component {
             <div>
                 <NavBar/>
                 <Acao/>
+                <Endbar/>
             </div>
         );
     }

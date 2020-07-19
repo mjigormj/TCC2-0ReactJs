@@ -13,6 +13,10 @@ import RegistroEntrada from '../pages/RegistroEntrada';
 import RegistroSaida from '../pages/RegistroSaida';
 import CriarEntrada from '../pages/CriarEntrada';
 import CriarSaida from '../pages/CriarSaida';
+import CriarMorador from '../pages/CriarMorador';
+import AlterarMorador from '../pages/AlterarMorador';
+import Morador from '../pages/Morador';
+
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -36,7 +40,10 @@ const Routes = () => (
             <PrivateRoute component={RegistroEntrada} exact path="/historico/entrada/registros"/>
             <PrivateRoute component={RegistroSaida} exact path="/historico/saida/registros"/>
             <PrivateRoute component={CriarEntrada} exact path="/historico/entrada/criar"/>
-            <PrivateRoute component={CriarSaida} exact path="/historico/saida/criar"/>                   
+            <PrivateRoute component={CriarSaida} exact path="/historico/saida/criar"/>
+            <PrivateRoute component={CriarMorador} exact path="/criar/morador"/>     
+            <PrivateRoute component={AlterarMorador} exact path="/alterar/morador/:idMorador"/> 
+            <PrivateRoute component={Morador} exact path="/morador/:idMorador"/>                     
             <Route component={NotFound} />
         </Switch>
 

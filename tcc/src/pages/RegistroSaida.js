@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import axios from 'axios'
 import {NavLink} from 'react-router-dom'
 import CardSaida from '../components/CardSaida';
+import Endbar from '../components/Endbar';
 
 
 
@@ -40,6 +41,7 @@ export default function RegistroSaida (props) {
                 )}
             </div>
          </div>
+         <Endbar/>
         </div>
     );
 }
