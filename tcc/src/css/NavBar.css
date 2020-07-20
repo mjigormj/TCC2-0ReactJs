@@ -37,3 +37,7 @@ header {
 .nav_links li a:hover {
     color: cornflowerblue;
 }
+
+.nav_links li a.active {
+    color:cornflowerblue;
+}

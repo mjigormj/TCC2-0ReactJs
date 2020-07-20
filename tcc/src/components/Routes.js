@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Login from '../pages/Login';
 import Home from '../pages/Home';
-import BD from '../pages/BD';
 import Historico from '../pages/Historico';
 import Moradores from '../pages/Moradores';
 import NotFound from './NotFound';
@@ -16,6 +15,10 @@ import CriarSaida from '../pages/CriarSaida';
 import CriarMorador from '../pages/CriarMorador';
 import AlterarMorador from '../pages/AlterarMorador';
 import Morador from '../pages/Morador';
+import Pessoas from '../pages/pessoas';
+import Pessoa from '../pages/pessoa';
+import AlterarPessoa from '../pages/AlterarPessoa';
+import CriarPessoa from '../pages/CriarPessoa';
 
 
 
@@ -34,7 +37,7 @@ const Routes = () => (
         <Switch>
             <Route component={Login} exact path="/" />
             <PrivateRoute component={Home} exact path="/Home" />
-            <PrivateRoute component={BD} exact path="/BD" />
+            <PrivateRoute component={Pessoas} exact path="/pessoas" />
             <PrivateRoute component={Historico} exact path="/Historico" />
             <PrivateRoute component={Moradores} exact path="/Moradores" />
             <PrivateRoute component={RegistroEntrada} exact path="/historico/entrada/registros"/>
@@ -43,10 +46,12 @@ const Routes = () => (
             <PrivateRoute component={CriarSaida} exact path="/historico/saida/criar"/>
             <PrivateRoute component={CriarMorador} exact path="/criar/morador"/>     
             <PrivateRoute component={AlterarMorador} exact path="/alterar/morador/:idMorador"/> 
-            <PrivateRoute component={Morador} exact path="/morador/:idMorador"/>                     
+            <PrivateRoute component={Morador} exact path="/morador/:idMorador"/> 
+            <PrivateRoute component={Pessoa} exact path="/pessoa/:idPessoa"/>     
+            <PrivateRoute component={AlterarPessoa} exact path="/alterar/pessoa/:idPessoa"/>  
+            <PrivateRoute component={CriarPessoa} exact path="/criar/pessoa"/>              
             <Route component={NotFound} />
         </Switch>
-
     </BrowserRouter>
 );
 

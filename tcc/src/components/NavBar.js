@@ -10,7 +10,7 @@ const NavBar = () => (
             <img src={logo} alt="logo"/>
             <nav>
                 <ul className="nav_links">
-                    <li><NavLink className="waves-effect" to="/Home">Home</NavLink></li> <li><NavLink className="waves-effect" to="/Moradores">Moradores</NavLink></li> <li><NavLink className="waves-effect" to="/Historico">Histórico</NavLink></li> <li><NavLink className="waves-effect" to="/BD">Banco de Dados</NavLink></li>
+                    <li><NavLink className="waves-effect" to="/Home">Home</NavLink></li> <li><NavLink className="waves-effect" to="/Moradores">Moradores</NavLink></li> <li><NavLink className="waves-effect" to="/Historico">Histórico</NavLink></li> <li><NavLink className="waves-effect" to="/pessoas">Pessoas</NavLink></li>
                 </ul>
             </nav>
         </header>

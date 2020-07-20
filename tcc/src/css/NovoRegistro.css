@@ -50,6 +50,7 @@
     font-size: 14px;
     font-weight: bold;
     display: block;
+    margin-left: 5px;
 }
 
 .modalNovoRegistro form .input-block input {
@@ -62,6 +63,22 @@
     border-bottom: 1px solid #eee;
 }
 
+.input-tipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-tipo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.input-block-row {
+    display: flex;
+    flex-direction: column;
+}
+
 .modalNovoRegistro form button[type=submit] {
     width: 100%;
     border: 0;
@@ -71,7 +88,12 @@
     padding: 15px 20px;
     font-size: 14px;
     font-weight: bold;
+    color: #fff;
     cursor: pointer;
+}
+
+.lbl-file {
+    margin-bottom: 10px;
 }
 
 .modalNovoRegistro form button[type=submit]:hover {
