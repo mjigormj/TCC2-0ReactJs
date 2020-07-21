@@ -23,6 +23,10 @@ import Funcionarios from '../pages/Funcionarios';
 import CriarFuncionario from '../pages/CriarFuncionario'
 import AlterarFuncionario from '../pages/AlterarFuncionario'
 import Funcionario from '../pages/Funcionario'
+import Encomendas from '../pages/Encomendas';
+import Encomenda from '../pages/Encomenda'
+import CriarEncomenda from '../pages/CriarEncomenda'
+import AlterarEncomenda from '../pages/AlterarEncomenda'
  
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -57,7 +61,10 @@ const Routes = () => (
             <PrivateRoute component={CriarFuncionario} exact path="/criar/funcionario"/>
             <PrivateRoute component={AlterarFuncionario} exact path="/alterar/funcionario/:idFuncionario"/>           
             <PrivateRoute component={Funcionario} exact path="/funcionario/:idFuncionario"/> 
-
+            <PrivateRoute component={Encomendas} exact path="/encomendas"/> 
+            <PrivateRoute component={Encomenda} exact path="/encomenda/:idEncomenda"/> 
+            <PrivateRoute component={CriarEncomenda} exact path="/criar/encomenda"/> 
+            <PrivateRoute component={AlterarEncomenda} exact path="/alterar/encomenda/:idEncomenda"/> 
             <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
