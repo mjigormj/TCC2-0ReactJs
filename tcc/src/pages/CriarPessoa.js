@@ -50,6 +50,7 @@ export default class CriarPessoa extends React.Component{
 
         axios.post(`http://127.0.0.1:5000/user/criar`, {nome: registro.nome, cpf: registro.cpf, rg: registro.rg, tipopessoa:registro.tipopessoa, foto:this.state.foto})
             .then(res=>{
+                console.log(res.data.foto)
                 console.log(res.data.message)
                 history.push('/pessoas')
             })
@@ -99,7 +100,7 @@ export default class CriarPessoa extends React.Component{
                         </div>
                         <div className="input-block">
                             <div className="input-block-row">
-                                <label className="lbl-file">Selecione uma foto:</label> 
+                                <label for="foto" className="lbl-file"><span className="add_photo">publish</span><p>Selecione uma foto</p></label> 
                                 <input type="file" name="foto" id="foto" accept="image/*" onChange={this.handleFotoChange}/>
                             </div>
                         </div>

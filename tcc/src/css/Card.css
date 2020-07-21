@@ -78,3 +78,28 @@
 .detalhes:hover {
     opacity: 1;
 }
+
+.perfil {
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(23, 26, 41);
+    width: 50%;
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 20px;
+    margin-left: 25%;
+}
+
+.perfil-content {
+    display:flex;
+    flex-direction:column;
+    margin-left:15px;
+}
+
+.perfil img{
+    border-radius:2px;
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+}

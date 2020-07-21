@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya Sans');
+@import url('https://fonts.googleapis.com/css?family=Material Icons');
 
 /*  GRID    */
 section {
@@ -25,29 +25,36 @@ section {
 }
 
 .opcao {
-    background-color: rgb(71, 135, 255);
+    background-color: rgb(42, 110, 255);
+    text-align: center;
+    cursor: pointer;
+    min-width: 200px;
+    min-height: 200px;
 }
 
 .opcao:hover {
-    background-color: rgb(72, 90, 255);
+    background-color: rgb(110, 110, 255);
     margin: -15px;
     padding: 10%;
     text-align: center;
-    font-size: 20px;
-    
-
 }
+
 #cad:hover {
     background-color: rgb(72, 90, 255);
     margin: -15px;
-    
-    text-align: center;
-    font-size: 20px;
-    
 }
+
 p {
-    color: black;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
     text-align: center;
+    font-size: 20px;
+}
+
+.opt-icon {
+    font-family: Material Icons;
+    margin-top: 12px;    
+    font-size: 115px;
+    color: rgb(20, 60, 120);
 }

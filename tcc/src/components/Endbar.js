@@ -3,6 +3,6 @@ import '../css/endbar.css'
 
 export default function Endbar(){
     return(
-        <div className="endbar"></div>
+        <div className="endbar" valign="bottom"></div>
     );
 }

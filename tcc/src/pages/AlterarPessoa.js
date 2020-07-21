@@ -66,7 +66,7 @@ export default function AlterarPessoa (props){
             <div className="modalNovoRegistro">
                 <div id="NovoRegistroSaida">
                     <strong className="titulo">Alterar informações da pessoa</strong>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} encType="multipart/form-data">
                         <div className="input-block">
                             <label htmlFor="nome">Nome</label>
                             <input name="nome" id="nome" onChange={handleNomeChange}/>
@@ -97,7 +97,7 @@ export default function AlterarPessoa (props){
                         </div>
                         <div className="input-block">
                             <div className="input-block-row">
-                                <label className="lbl-file">Selecione uma foto:</label> 
+                                <label className="lbl-file"><span className="add_photo">publish</span><p>Selecione uma foto</p></label> 
                                 <input type="file" name="foto" id="foto" accept="image/*" onChange={handleFotoChange}/>
                             </div>
                         </div>

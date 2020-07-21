@@ -41,3 +41,11 @@ header {
 .nav_links li a.active {
     color:cornflowerblue;
 }
+
+.logo {
+    opacity: .9;
+}
+
+.logo:hover {
+    opacity: 1;
+}

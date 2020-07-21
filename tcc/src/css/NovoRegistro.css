@@ -94,6 +94,37 @@
 
 .lbl-file {
     margin-bottom: 10px;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+    padding: 0px;
+    width: 20%;
+    opacity: .8;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lbl-file:hover {
+    opacity: 1;
+}
+
+.add_photo {
+    font-family: Material Icons;
+    font-size: 60px;
+    color:white;
+}
+
+.lbl-file p{
+    color: white;
+    margin-top:-8px;
+    margin-bottom: 4px;
+}
+
+input[type="file"] {
+    display: none;  
 }
 
 .modalNovoRegistro form button[type=submit]:hover {
