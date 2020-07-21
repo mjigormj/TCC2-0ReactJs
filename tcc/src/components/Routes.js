@@ -19,8 +19,11 @@ import Pessoas from '../pages/pessoas';
 import Pessoa from '../pages/pessoa';
 import AlterarPessoa from '../pages/AlterarPessoa';
 import CriarPessoa from '../pages/CriarPessoa';
-
-
+import Funcionarios from '../pages/Funcionarios';
+import CriarFuncionario from '../pages/CriarFuncionario'
+import AlterarFuncionario from '../pages/AlterarFuncionario'
+import Funcionario from '../pages/Funcionario'
+ 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route {...rest} render={props => (
@@ -49,7 +52,12 @@ const Routes = () => (
             <PrivateRoute component={Morador} exact path="/morador/:idMorador"/> 
             <PrivateRoute component={Pessoa} exact path="/pessoa/:idPessoa"/>     
             <PrivateRoute component={AlterarPessoa} exact path="/alterar/pessoa/:idPessoa"/>  
-            <PrivateRoute component={CriarPessoa} exact path="/criar/pessoa"/>              
+            <PrivateRoute component={CriarPessoa} exact path="/criar/pessoa"/>     
+            <PrivateRoute component={Funcionarios} exact path="/funcionarios"/>   
+            <PrivateRoute component={CriarFuncionario} exact path="/criar/funcionario"/>
+            <PrivateRoute component={AlterarFuncionario} exact path="/alterar/funcionario/:idFuncionario"/>           
+            <PrivateRoute component={Funcionario} exact path="/funcionario/:idFuncionario"/> 
+
             <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
