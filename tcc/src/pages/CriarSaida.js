@@ -28,6 +28,7 @@ export default class CriarEntrada extends React.Component{
         axios.post(`http://127.0.0.1:5000/acesso/saida/criar`, {cpf: registro.cpf})
             .then(res=>{
                 console.log(res.data.message)
+                history.push("/historico/saida/registros")
             })
         
     };

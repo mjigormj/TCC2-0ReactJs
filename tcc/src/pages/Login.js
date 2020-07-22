@@ -25,7 +25,6 @@ export default class Login extends React.Component{
         const conta = {
             usuario: this.state.usuario,
             senha: this.state.senha
-
         };
 
         const {history} = this.props

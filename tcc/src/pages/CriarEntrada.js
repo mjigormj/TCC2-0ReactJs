@@ -33,6 +33,7 @@ export default class CriarEntrada extends React.Component{
         axios.post(`http://127.0.0.1:5000/acesso/entrada/criar`, {cpf: registro.cpf, apartamento: registro.apartamento, predio: registro.predio})
             .then(res=>{
                 console.log(res.data.message)
+                history.push('/historico/entrada/registros')
             })
         
     };
