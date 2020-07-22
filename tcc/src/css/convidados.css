@@ -1,0 +1,26 @@
+.add_convidado {
+    margin-right: 15px;
+    background-color:rgb(57, 86, 135);
+    border: 1px rgb(57, 86, 135) solid;
+    border-radius: 10px;
+    opacity: .8;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 15%;
+    padding-left: 15px;
+    color: greenyellow;
+    margin-left: 260px;
+}
+
+.add_convidado span {
+    font-family: Material Icons;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.add_convidado:hover {
+    opacity: 1;
+}

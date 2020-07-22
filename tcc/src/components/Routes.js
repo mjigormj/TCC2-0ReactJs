@@ -31,6 +31,9 @@ import Eventos from '../pages/Eventos';
 import Evento from '../pages/Evento';
 import CriarEvento from '../pages/CriarEvento'
 import AlterarEvento from '../pages/AlterarEvento'
+import CriarConvidado from '../pages/CriarConvidado'
+import Convidados from '../pages/Convidados'
+import AlterarConvidado from '../pages/AlterarConvidado'
  
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -72,7 +75,10 @@ const Routes = () => (
             <PrivateRoute component={Eventos} exact path="/eventos"/> 
             <PrivateRoute component={Evento} exact path="/evento/:idEvento"/> 
             <PrivateRoute component={CriarEvento} exact path="/criar/evento"/> 
-            <PrivateRoute component={AlterarEvento} exact path="/alterar/evento/:idEvento"/> 
+            <PrivateRoute component={AlterarEvento} exact path="/alterar/evento/:idEvento"/>
+            <PrivateRoute component={CriarConvidado} exact path="/evento/:idEvento/criar/convidado"/> 
+            <PrivateRoute component={Convidados} exact path="/evento/:idEvento/convidados"/>  
+            <PrivateRoute component={AlterarConvidado} exact path="/alterar/:idEvento/convidado/:idConvidado"/>  
             <Route component={NotFound} />
         </Switch>
     </BrowserRouter>

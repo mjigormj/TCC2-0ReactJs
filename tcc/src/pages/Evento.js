@@ -69,6 +69,7 @@ export default function Evento(props){
                 <h1 className="text-registro">{`Prédio ${evento.predio}`}</h1>
             </div>
             <div className="options">
+                <NavLink to={`/evento/${evento.id}/convidados`} className="ver_convidados">format_list_bulleted</NavLink>
                 <button class="delete" onClick={HandleDelete}>delete</button>
                 <NavLink to={`/alterar/evento/${evento.id}`} class="alterar">history_edu</NavLink>
             </div>
